@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Packages</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // JavaScript for toggling the mobile menu
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="py-4 text-white bg-sky-500">
+      <div class="container flex items-center justify-between px-4 mx-auto">
+        <h1 class="text-2xl font-bold">SEO SUBMISSION</h1>
+        <nav>
+          <!-- Desktop Menu -->
+          <ul class="hidden space-x-4 md:flex">
+            <li>
+              <a href="#" class="px-3 py-2 rounded hover:bg-sky-600">Home</a>
+            </li>
+            <li>
+              <a href="#" class="px-3 py-2 rounded hover:bg-sky-600">Contact</a>
+            </li>
+            <li>
+              <a href="#" class="px-3 py-2 rounded hover:bg-sky-600"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="#" class="px-3 py-2 rounded bg-sky-700">Packages</a>
+            </li>
+            <!-- Active Menu -->
+          </ul>
+          <!-- Hamburger Icon -->
+          <button class="md:hidden" onclick="toggleMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </nav>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-sky-500">
+        <ul class="flex flex-col items-center py-4 space-y-4">
+          <li>
+            <a href="#" class="px-3 py-2 rounded hover:bg-sky-600">Home</a>
+          </li>
+          <li>
+            <a href="#" class="px-3 py-2 rounded hover:bg-sky-600">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="px-3 py-2 rounded hover:bg-sky-600">About Us</a>
+          </li>
+          <li><a href="#" class="px-3 py-2 rounded bg-sky-700">Packages</a></li>
+          <!-- Active Menu -->
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container px-4 py-8 mx-auto">
+      <h2 class="mb-8 text-3xl font-bold text-center">Choose Your Plan</h2>
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Pricing Box 1 -->
+        <div
+          class="p-6 text-center transition duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl"
+        >
+          <h3 class="pb-2 mb-4 text-xl font-semibold border-b-2 border-sky-500">
+            Basic Plan
+          </h3>
+          <p class="mb-4 text-4xl font-bold text-sky-500">$19</p>
+          <ul class="mb-6 space-y-2">
+            <li>5 Keywords</li>
+            <li>Basic SEO</li>
+            <li>Email Support</li>
+          </ul>
+          <button
+            class="px-4 py-2 text-white rounded-lg bg-sky-500 hover:bg-sky-600"
+          >
+            Choose Plan
+          </button>
+        </div>
+
+        <!-- Pricing Box 2 -->
+        <div
+          class="p-6 text-center transition duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl"
+        >
+          <h3 class="pb-2 mb-4 text-xl font-semibold border-b-2 border-sky-500">
+            Standard Plan
+          </h3>
+          <p class="mb-4 text-4xl font-bold text-sky-500">$49</p>
+          <ul class="mb-6 space-y-2">
+            <li>15 Keywords</li>
+            <li>Advanced SEO</li>
+            <li>Phone Support</li>
+          </ul>
+          <button
+            class="px-4 py-2 text-white rounded-lg bg-sky-500 hover:bg-sky-600"
+          >
+            Choose Plan
+          </button>
+        </div>
+
+        <!-- Pricing Box 3 -->
+        <div
+          class="p-6 text-center transition duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl"
+        >
+          <h3 class="pb-2 mb-4 text-xl font-semibold border-b-2 border-sky-500">
+            Premium Plan
+          </h3>
+          <p class="mb-4 text-4xl font-bold text-sky-500">$99</p>
+          <ul class="mb-6 space-y-2">
+            <li>Unlimited Keywords</li>
+            <li>Full SEO Audit</li>
+            <li>24/7 Support</li>
+          </ul>
+          <button
+            class="px-4 py-2 text-white rounded-lg bg-sky-500 hover:bg-sky-600"
+          >
+            Choose Plan
+          </button>
+        </div>
+
+        <!-- Pricing Box 4 -->
+        <div
+          class="p-6 text-center transition duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl"
+        >
+          <h3 class="pb-2 mb-4 text-xl font-semibold border-b-2 border-sky-500">
+            Enterprise Plan
+          </h3>
+          <p class="mb-4 text-4xl font-bold text-sky-500">$199</p>
+          <ul class="mb-6 space-y-2">
+            <li>Custom Keywords</li>
+            <li>Dedicated Manager</li>
+            <li>Priority Support</li>
+          </ul>
+          <button
+            class="px-4 py-2 text-white rounded-lg bg-sky-500 hover:bg-sky-600"
+          >
+            Choose Plan
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
