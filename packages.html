@@ -3,7 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Packages</title>
+    <title>SEO Packages</title>
+    <meta
+      name="description"
+      content="Choose from our affordable SEO packages including manual directory submission, backlink creation, and off-page optimization tailored to your business needs."
+    />
+
+    <meta
+      name="keywords"
+      content="seo packages, backlink packages, directory submission plans, cheap seo, affordable seo services"
+    />
+
+    <meta
+      property="og:title"
+      content="SEO Packages — Directory Submission & Backlink Services"
+    />
+    <meta
+      property="og:description"
+      content="Explore our cost-effective SEO and backlink packages designed to improve your website’s search ranking."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       // JavaScript for toggling the mobile menu
@@ -12,152 +31,294 @@
         menu.classList.toggle("hidden");
       }
     </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <style>
+      @keyframes cardLoad {
+        0% {
+          opacity: 0;
+          transform: translateY(10px) scale(0.95);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0px) scale(1);
+        }
+      }
+      .animate-card {
+        animation: cardLoad 0.7s ease forwards;
+      }
+      .price-card:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .price-card:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .price-card:nth-child(4) {
+        animation-delay: 0.45s;
+      }
+    </style>
   </head>
   <body class="bg-gray-50">
     <!-- Header -->
-    <header class="py-4 text-white bg-sky-500">
-      <div class="container flex items-center justify-between px-4 mx-auto">
-        <h1 class="text-2xl font-bold">SEO SUBMISSION</h1>
-        <nav>
-          <!-- Desktop Menu -->
-          <ul class="hidden space-x-4 md:flex">
-            <li>
-              <a href="#" class="px-3 py-2 rounded hover:bg-sky-600">Home</a>
-            </li>
-            <li>
-              <a href="#" class="px-3 py-2 rounded hover:bg-sky-600">Contact</a>
-            </li>
-            <li>
-              <a href="#" class="px-3 py-2 rounded hover:bg-sky-600"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a href="#" class="px-3 py-2 rounded bg-sky-700">Packages</a>
-            </li>
-            <!-- Active Menu -->
-          </ul>
-          <!-- Hamburger Icon -->
-          <button class="md:hidden" onclick="toggleMenu()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </button>
+    <header
+      class="top-0 z-50 w-full py-4 bg-white border-b-4 md:sticky border-sky-100"
+    >
+      <div
+        class="container flex flex-col justify-between pl-3 mx-auto md:flex-row md:items-center gap-x-10"
+      >
+        <div class="flex flex-row items-center justify-between pr-10">
+          <div class="flex flex-col py-5 md:mr-auto md:py-0">
+            <a href="/" class="pb-5 text-3xl font-black md:text-4xl md:pb-0">
+              SEO <span class="text-sky-500">SUBMISSION</span>
+            </a>
+            <p class="font-semibold text-gray-600">
+              Most reliable and affodable link building service
+            </p>
+          </div>
+
+          <!-- Hamburger Menu -->
+          <ion-icon
+            name="reorder-four-outline"
+            class="block text-4xl cursor-pointer md:hidden text-sky-700"
+            onclick="toggleMenu()"
+          ></ion-icon>
+        </div>
+
+        <nav class="items-center hidden md:block gap-x-8">
+          <a
+            href="/"
+            class="px-3 py-2 font-semibold transition rounded-md hover:bg-sky-500 hover:text-white"
+            >Home</a
+          >
+          <a
+            href="/contact.html"
+            class="px-3 py-2 transition rounded hover:bg-sky-600 hover:text-white"
+            >Contact</a
+          >
+          <a
+            href="/blog.html"
+            class="px-3 py-2 transition rounded hover:bg-sky-600 hover:text-white"
+            >Blog</a
+          >
+          <a
+            href="/about.html"
+            class="px-3 py-2 transition rounded hover:bg-sky-600 hover:text-white"
+            >About</a
+          >
         </nav>
-      </div>
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-sky-500">
-        <ul class="flex flex-col items-center py-4 space-y-4">
-          <li>
-            <a href="#" class="px-3 py-2 rounded hover:bg-sky-600">Home</a>
-          </li>
-          <li>
-            <a href="#" class="px-3 py-2 rounded hover:bg-sky-600">Contact</a>
-          </li>
-          <li>
-            <a href="#" class="px-3 py-2 rounded hover:bg-sky-600">About Us</a>
-          </li>
-          <li><a href="#" class="px-3 py-2 rounded bg-sky-700">Packages</a></li>
-          <!-- Active Menu -->
-        </ul>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden">
+          <ul class="flex flex-col mx-auto space-y-2">
+            <li
+              class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
+            >
+              <a href="/">Home</a>
+            </li>
+            <li
+              class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
+            >
+              <a href="/contact.html">Contact</a>
+            </li>
+            <li
+              class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
+            >
+              <a href="/blog.html">Blog</a>
+            </li>
+            <li
+              class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
+            >
+              <a href="/about.html">About</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container px-4 py-8 mx-auto">
-      <h2 class="mb-8 text-3xl font-bold text-center">Choose Your Plan</h2>
-      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <!-- Pricing Box 1 -->
-        <div
-          class="p-6 text-center transition duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl"
-        >
-          <h3 class="pb-2 mb-4 text-xl font-semibold border-b-2 border-sky-500">
-            Basic Plan
-          </h3>
-          <p class="mb-4 text-4xl font-bold text-sky-500">$19</p>
-          <ul class="mb-6 space-y-2">
-            <li>5 Keywords</li>
-            <li>Basic SEO</li>
-            <li>Email Support</li>
-          </ul>
-          <button
-            class="px-4 py-2 text-white rounded-lg bg-sky-500 hover:bg-sky-600"
-          >
-            Choose Plan
-          </button>
-        </div>
+    <main>
+      <section>
+        <div class="container pt-10 mx-auto mb-20">
+          <h2 class="my-8 text-3xl font-bold text-center text-gray-700">
+            Choose your suitable package
+          </h2>
 
-        <!-- Pricing Box 2 -->
-        <div
-          class="p-6 text-center transition duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl"
-        >
-          <h3 class="pb-2 mb-4 text-xl font-semibold border-b-2 border-sky-500">
-            Standard Plan
-          </h3>
-          <p class="mb-4 text-4xl font-bold text-sky-500">$49</p>
-          <ul class="mb-6 space-y-2">
-            <li>15 Keywords</li>
-            <li>Advanced SEO</li>
-            <li>Phone Support</li>
-          </ul>
-          <button
-            class="px-4 py-2 text-white rounded-lg bg-sky-500 hover:bg-sky-600"
+          <!-- GRID -->
+          <div
+            class="grid grid-cols-1 gap-6 px-10 mt-10 text-center md:grid-cols-2 lg:grid-cols-4"
           >
-            Choose Plan
-          </button>
-        </div>
+            <!-- PRICE CARD -->
+            <div
+              class="p-6 transition-all duration-300 scale-95 translate-y-5 bg-white border border-gray-200 shadow-sm opacity-0 price-card animate-card rounded-xl hover:shadow-xl hover:scale-105"
+            >
+              <h3 class="text-lg font-bold">Basic</h3>
+              <h3 class="pb-3 border-b-2 border-sky-500">
+                <span class="text-xl font-bold">$49</span><span> only</span>
+              </h3>
 
-        <!-- Pricing Box 3 -->
-        <div
-          class="p-6 text-center transition duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl"
-        >
-          <h3 class="pb-2 mb-4 text-xl font-semibold border-b-2 border-sky-500">
-            Premium Plan
-          </h3>
-          <p class="mb-4 text-4xl font-bold text-sky-500">$99</p>
-          <ul class="mb-6 space-y-2">
-            <li>Unlimited Keywords</li>
-            <li>Full SEO Audit</li>
-            <li>24/7 Support</li>
-          </ul>
-          <button
-            class="px-4 py-2 text-white rounded-lg bg-sky-500 hover:bg-sky-600"
-          >
-            Choose Plan
-          </button>
-        </div>
+              <ul class="pt-5 space-y-3 text-left">
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 500 Directory submission
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ Manual Submission
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ Upto 5 Keywords
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ Detailed Report with result
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ Submit in 4 days
+                </li>
+              </ul>
 
-        <!-- Pricing Box 4 -->
-        <div
-          class="p-6 text-center transition duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl"
-        >
-          <h3 class="pb-2 mb-4 text-xl font-semibold border-b-2 border-sky-500">
-            Enterprise Plan
-          </h3>
-          <p class="mb-4 text-4xl font-bold text-sky-500">$199</p>
-          <ul class="mb-6 space-y-2">
-            <li>Custom Keywords</li>
-            <li>Dedicated Manager</li>
-            <li>Priority Support</li>
-          </ul>
-          <button
-            class="px-4 py-2 text-white rounded-lg bg-sky-500 hover:bg-sky-600"
-          >
-            Choose Plan
-          </button>
+              <a
+                href="https://www.paypal.com/ncp/payment/4GRW5X72CAK9C
+"
+                class="inline-block px-10 py-3 mt-6 text-white transition rounded-lg bg-sky-500 hover:bg-sky-600"
+                >Pay now</a
+              >
+            </div>
+
+            <!-- PRICE CARD -->
+            <div
+              class="p-6 transition-all duration-300 scale-95 translate-y-5 bg-white border border-gray-200 shadow-sm opacity-0 price-card animate-card rounded-xl hover:shadow-xl hover:scale-105"
+            >
+              <h3 class="text-lg font-bold text-sky-500">Popular</h3>
+              <h3 class="pb-3 border-b-2 border-sky-500">
+                <span class="text-xl font-bold">$99</span><span> only</span>
+              </h3>
+
+              <ul class="pt-5 space-y-3 text-left">
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 500 Directory submission
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 50 Article Submission
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 25 Citation Link Building
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 15 CSS Gallery Submission
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ Submission in 15 days
+                </li>
+              </ul>
+
+              <a
+                href="https://www.paypal.com/ncp/payment/8T4JY34LTYCGU"
+                class="inline-block px-10 py-3 mt-6 text-white transition rounded-lg bg-sky-500 hover:bg-sky-600"
+                >Pay now</a
+              >
+            </div>
+
+            <!-- PRICE CARD -->
+            <div
+              class="p-6 transition-all duration-300 scale-95 translate-y-5 bg-white border border-gray-200 shadow-sm opacity-0 price-card animate-card rounded-xl hover:shadow-xl hover:scale-105"
+            >
+              <h3 class="text-lg font-bold">Full SEO</h3>
+              <h3 class="pb-3 border-b-2 border-sky-500">
+                <span class="text-xl font-bold">$149</span><span> only</span>
+              </h3>
+
+              <ul class="pt-5 space-y-3 text-left">
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 1000 Directory submission
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 75 Article Submission
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 25 Citation Link Building
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 25 CSS Gallery Submission
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ Submission in 15 days
+                </li>
+              </ul>
+
+              <a
+                href="https://www.paypal.com/ncp/payment/5QT8JCTY8LRDC"
+                class="inline-block px-10 py-3 mt-6 text-white transition rounded-lg bg-sky-500 hover:bg-sky-600"
+                >Pay now</a
+              >
+            </div>
+
+            <!-- 4th NEW CARD -->
+            <div
+              class="p-6 transition-all duration-300 scale-95 translate-y-5 bg-white border border-gray-200 shadow-sm opacity-0 price-card animate-card rounded-xl hover:shadow-xl hover:scale-105"
+            >
+              <h3 class="text-lg font-bold text-green-600">Premium Boost</h3>
+              <h3 class="pb-3 border-b-2 border-green-500">
+                <span class="text-xl font-bold">$199</span><span> only</span>
+              </h3>
+
+              <ul class="pt-5 space-y-3 text-left">
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 1500 Directory submission
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 100 Article Submissions
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 50 Citation Backlinks
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ 25 Social Bookmarking Links
+                </li>
+                <li class="flex items-center gap-3 text-gray-700">
+                  ✔ Submission in 25 days
+                </li>
+              </ul>
+
+              <a
+                href="https://www.paypal.com/ncp/payment/7PBHW24H8V3E8"
+                class="inline-block px-10 py-3 mt-6 text-white transition bg-green-500 rounded-lg hover:bg-green-600"
+                >Pay now</a
+              >
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
+
+    <footer class="w-full py-5 mt-auto bg-gray-100">
+      <div class="py-5 text-center">
+        <p class="text-sm text-gray-500">
+          Copyright © 2025 SEOSUBMISSION. All rights reserved |
+          <span
+            ><a href="/privacypolicy.html" class="underline"
+              >Privacy policy</a
+            ></span
+          >
+          <span
+            ><a href="/refundpolicy.html" class="underline"
+              >Refund Policy</a
+            ></span
+          >
+        </p>
+      </div>
+    </footer>
   </body>
+
+  <script type="module" src="/src/main.js">
+    function Menu(e){
+      let list = document.querySelector('ul')
+      e.name === 'reorder-four-outline' ? e.name="close-outline" : e.name = "reorder-four-outline"
+    }
+  </script>
 </html>

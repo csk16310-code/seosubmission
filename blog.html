@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO SUBMISSION - BLOG</title>
+    <meta
+      name="description"
+      content="Read expert SEO articles, backlink guides, directory submission tips, and digital marketing insights to grow your website's visibility."
+    />
+
+    <meta
+      name="keywords"
+      content="seo blog, backlink guides, seo tips, directory submission blog, off-page seo tips"
+    />
+
+    <meta property="og:title" content="SEO Blog — Latest Tips & Guides" />
+    <meta
+      property="og:description"
+      content="Stay updated with professional SEO strategies, backlink insights, and optimization techniques."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      // JavaScript to toggle the mobile menu
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+
+      function generateCaptcha() {
+        const num1 = Math.floor(Math.random() * 10);
+        const num2 = Math.floor(Math.random() * 10);
+        document.getElementById("captchaText").innerText =
+          num1 + " + " + num2 + " =";
+        document.getElementById("captchaAnswer").value = num1 + num2;
+      }
+
+      function validateForm(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const captchaInput = document
+          .getElementById("captchaInput")
+          .value.trim();
+        const captchaAnswer = document.getElementById("captchaAnswer").value;
+
+        if (!name || !email || !message || !captchaInput) {
+          alert("All fields are mandatory.");
+          return false;
+        }
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+
+        if (parseInt(captchaInput) !== parseInt(captchaAnswer)) {
+          alert("Captcha verification failed.");
+          generateCaptcha();
+          return false;
+        }
+
+        alert("Message Successfully Sent!");
+        document.getElementById("contactForm").reset();
+        generateCaptcha();
+        return true;
+      }
+
+      window.onload = generateCaptcha;
+    </script>
+  </head>
+  <body class="bg-gray-100">
+    <header
+      class="top-0 z-50 w-full py-4 bg-white border-b-4 md:sticky border-sky-100"
+    >
+      <div
+        class="container flex flex-col justify-between pl-3 mx-auto md:flex-row md:items-center gap-x-10"
+      >
+        <div class="flex flex-row items-center justify-between pr-10">
+          <div class="flex flex-col py-5 md:mr-auto md:py-0">
+            <a href="/" class="pb-5 text-3xl font-black md:text-4xl md:pb-0">
+              SEO <span class="text-sky-500">SUBMISSION</span>
+            </a>
+            <p class="font-semibold text-gray-600">
+              Most reliable and affodable link building service
+            </p>
+          </div>
+
+          <!-- Hamburger Menu -->
+          <ion-icon
+            name="reorder-four-outline"
+            class="block text-4xl cursor-pointer md:hidden text-sky-700"
+            onclick="toggleMenu()"
+          ></ion-icon>
+        </div>
+
+        <nav class="items-center hidden md:block gap-x-8">
+          <a
+            href="/"
+            class="px-3 py-2 font-semibold transition rounded-md hover:bg-sky-500 hover:text-white"
+            >Home</a
+          >
+          <a
+            href="/contact.html"
+            class="px-3 py-2 transition rounded hover:bg-sky-600 hover:text-white"
+            >Contact</a
+          >
+          <a
+            href="blog.html"
+            class="px-3 py-2 transition rounded hover:bg-sky-600 hover:text-white"
+            >Blog</a
+          >
+          <a
+            href="about.html"
+            class="px-3 py-2 transition rounded hover:bg-sky-600 hover:text-white"
+            >About</a
+          >
+        </nav>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden">
+          <ul class="flex flex-col mx-auto space-y-2">
+            <li
+              class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
+            >
+              <a href="/">Home</a>
+            </li>
+            <li
+              class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
+            >
+              <a href="/contact.html">Contact</a>
+            </li>
+            <li
+              class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
+            >
+              <a href="/blog.html">Blog</a>
+            </li>
+            <li
+              class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
+            >
+              <a href="/about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="flex justify-center p-2 mt-5 bg-gray-100 min-h-min">
+      <div class="w-full max-w-md p-8 bg-white shadow-lg rounded-xl">
+        <h2 class="mb-6 text-2xl font-bold text-center text-gray-800">BLOG</h2>
+
+        <h3 class="text-4xl text-center">COMING SOON........</h3>
+      </div>
+    </div>
+
+    <footer class="container my-3 bg-gray-100 md:mx-auto">
+      <div class="py-10 text-center">
+        <p class="text-sm text-gray-500">
+          Copyright © 2025 SEOSUBMISSION. All rights reserved |
+          <span
+            ><a href="/privacypolicy.html" class="underline"
+              >Privacy policy</a
+            ></span
+          >
+          <span
+            ><a href="/refundpolicy.html" class="underline"
+              >Refund Policy</a
+            ></span
+          >
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js">
+      function Menu(e){
+        let list = document.querySelector('ul')
+        e.name === 'reorder-four-outline' ? e.name="close-outline" : e.name = "reorder-four-outline"
+      }
+    </script>
+  </body>
+</html>
