@@ -75,68 +75,74 @@
   </head>
   <body class="bg-gray-100">
     <header
-      class="top-0 z-50 w-full py-4 bg-white md:sticky border-b-3 border-sky-100"
+      class="top-0 z-50 w-full py-4 bg-white border-b-4 md:sticky border-sky-100"
     >
       <div
         class="container flex flex-col justify-between pl-3 mx-auto md:flex-row md:items-center gap-x-10"
       >
         <div class="flex flex-row items-center justify-between pr-10">
           <div class="flex flex-col py-5 md:mr-auto md:py-0">
-            <a href="#" class="pb-5 text-3xl font-black md:text-4xl md:pb-0"
-              >SEO <span class="text-sky-500">SUBMISSION</span>
+            <a href="/" class="pb-5 text-3xl font-black md:text-4xl md:pb-0">
+              SEO <span class="text-sky-500">SUBMISSION</span>
             </a>
             <p class="font-semibold text-gray-600">
               Most reliable and affodable link building service
             </p>
           </div>
-          <div>
-            <ion-icon
-              name="reorder-four-outline"
-              class="block text-4xl cursor-pointer md:hidden text-sky-700"
-            ></ion-icon>
-          </div>
+
+          <!-- Hamburger Menu -->
+          <ion-icon
+            name="reorder-four-outline"
+            class="block text-4xl cursor-pointer md:hidden text-sky-700"
+            onclick="toggleMenu()"
+          ></ion-icon>
         </div>
-        <nav class="flex items-center hidden md:block gap-x-8">
+
+        <nav class="items-center hidden md:block gap-x-8">
           <a
-            href="/packages.html"
-            class="px-3 py-2 font-semibold transition rounded-md hover:bg-sky-500"
+            href="/"
+            class="px-3 py-2 font-semibold transition rounded-md hover:bg-sky-500 hover:text-white"
             >Home</a
           >
           <a
-            href="#services"
-            class="px-3 py-2 transition rounded hover:bg-sky-600"
-            >Services</a
-          >
-          <a href="#" class="px-3 py-2 transition rounded hover:bg-sky-600"
+            href="/contact.html"
+            class="px-3 py-2 transition rounded hover:bg-sky-600 hover:text-white"
             >Contact</a
           >
-          <a href="#" class="px-3 py-2 transition rounded hover:bg-sky-600"
-            >About Us</a
+          <a
+            href="blog"
+            class="px-3 py-2 transition rounded hover:bg-sky-600 hover:text-white"
+            >Blog</a
+          >
+          <a
+            href="about.html"
+            class="px-3 py-2 transition rounded hover:bg-sky-600 hover:text-white"
+            >About</a
           >
         </nav>
 
-        <!-- mobile version -->
-        <nav class="hidden md:hidden">
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden">
           <ul class="flex flex-col mx-auto space-y-2">
             <li
               class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
             >
-              <a href="/packages.html">Packages</a>
+              <a href="/">Home</a>
             </li>
             <li
               class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
             >
-              <a href="#">Blog</a>
+              <a href="/contact">Contact</a>
             </li>
             <li
               class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
             >
-              <a href="#">Contact</a>
+              <a href="/blog">Blog</a>
             </li>
             <li
               class="block px-3 py-3 font-semibold rounded-md cursor-pointer bg-sky-100 text-sky-700 hover:text-white hover:bg-sky-500"
             >
-              <a href="#">About us</a>
+              <a href="/about">About</a>
             </li>
           </ul>
         </nav>
@@ -324,46 +330,40 @@
               name="name"
               required
               placeholder="Full name"
-              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 transition-all duration-300 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-blue-400"
             />
             <input
               type="email"
               name="email"
               required
               placeholder="Email ID "
-              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 transition-all duration-300 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-blue-400"
             />
             <input
               type="url"
               name="url"
               required
               placeholder="Website URL"
-              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 transition-all duration-300 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-blue-400"
             />
             <input
               type="text"
               name="designer_name"
               placeholder="Desiner Name"
-              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 transition-all duration-300 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-blue-400"
             />
             <input
               type="url"
               name="designer_url"
               placeholder="Designer Website "
-              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 transition-all duration-300 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-blue-400"
             />
-            <!-- <input
-              type="text"
-              name="country"
-              placeholder="Country"
-              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-1 focus:ring-blue-500"
-            /> -->
 
             <select
               id="country"
               name="country"
               Placeholder="Select Country"
-              class="w-full h-12 col-span-2 p-3 text-lg text-gray-400 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              class="w-full h-12 col-span-2 p-3 text-lg text-gray-400 transition-all duration-300 border border-gray-300 rounded-lg md:col-span-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-blue-400"
             ></select>
 
             <input
@@ -371,23 +371,19 @@
               name="keywords"
               required
               placeholder="Keywords"
-              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+              class="w-full h-12 col-span-2 p-3 text-lg text-gray-700 transition-all duration-300 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-blue-400"
             />
             <textarea
               name="description"
               required
               placeholder="Enter the details about website"
-              class="w-full col-span-2 p-3 text-lg text-gray-700 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+              class="w-full col-span-2 p-3 text-lg text-gray-700 transition-all duration-300 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-blue-400"
               rows="4"
             ></textarea>
-            <!-- <a
-              href="handler.php"
-              class="inline-block w-full col-span-2 px-4 py-3 text-lg font-semibold text-center text-white border rounded-lg bg-sky-500 hover:bg-sky-600 transition-normal"
-              >Order Now</a
-            > -->
+
             <button
               type="submit"
-              class="inline-block w-full col-span-2 px-4 py-3 text-lg font-semibold text-center text-white border rounded-lg bg-sky-500 hover:bg-sky-600 transition-normal"
+              class="inline-block w-full col-span-2 px-4 py-3 text-lg font-semibold text-center text-white transition-all duration-500 border rounded-lg shadow-md cursor-pointer bg-sky-500 hover:scale-105 hover:bg-sky-700 hover:shadow-lg"
             >
               Order Now
             </button>
@@ -482,7 +478,7 @@
             class="grid items-center grid-cols-1 gap-10 pb-8 mx-10 md:grid-cols-4 md:mx-0 md:gap-5"
           >
             <div
-              class="col-span-1 bg-white border rounded-lg shadow-xl border-sky-200"
+              class="col-span-1 transition-all duration-500 bg-white border rounded-lg shadow-md cursor-pointer border-sky-200 hover:scale-105 hover:bg-sky-100 hover:shadow-lg"
             >
               <h2
                 class="py-5 text-2xl font-semibold text-center border-b border-sky-200"
@@ -595,7 +591,7 @@
               </ul>
             </div>
             <div
-              class="col-span-1 bg-white border rounded-lg shadow-xl border-sky-200"
+              class="col-span-1 transition-all duration-500 bg-white border rounded-lg shadow-md cursor-pointer border-sky-200 hover:scale-105 hover:bg-sky-100 hover:shadow-lg"
             >
               <h2
                 class="py-5 text-2xl font-semibold text-center border-b border-sky-200"
@@ -708,7 +704,7 @@
               </ul>
             </div>
             <div
-              class="col-span-1 bg-white border rounded-lg shadow-xl border-sky-200"
+              class="col-span-1 transition-all duration-500 bg-white border rounded-lg shadow-md cursor-pointer border-sky-200 hover:scale-105 hover:bg-sky-100 hover:shadow-lg"
             >
               <h2
                 class="py-5 text-2xl font-semibold text-center border-b border-sky-200"
@@ -821,7 +817,7 @@
               </ul>
             </div>
             <div
-              class="col-span-1 bg-white border rounded-lg shadow-xl border-sky-200"
+              class="col-span-1 transition-all duration-500 bg-white border rounded-lg shadow-md cursor-pointer border-sky-200 hover:scale-105 hover:bg-sky-100 hover:shadow-lg"
             >
               <h2
                 class="py-5 text-2xl font-semibold text-center border-b border-sky-200"
