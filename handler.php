@@ -23,7 +23,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Email content
-$to = "csk16310@gmail.com";
+$to = "info@seosubmission.io";
 $subject = "New Submission Received";
 
 $body = "
@@ -37,7 +37,8 @@ Keywords: $keywords
 Description:$description";
 
 // Better headers for DreamHost
-$headers  = "From: info@seosubmission.co\r\n";
+// $headers  = "From: info@seosubmission.co\r\n";
+$headers = "From: $email\r\n";
 $headers .= "Reply-To: $email\r\n";
 
 // Send email

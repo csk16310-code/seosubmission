@@ -12,6 +12,8 @@ export default defineConfig({
         contact: resolve(__dirname, "contact.html"),
         about: resolve(__dirname, "about.html"),
         blog: resolve(__dirname, "blog.html"),
+        refund: resolve(__dirname, "refundpolicy.html"),
+        privacy: resolve(__dirname, "privacypolicy.html"),
       },
     },
   },

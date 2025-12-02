@@ -6,6 +6,8 @@ export default {
     "./contact.html",
     "./blog.html",
     "./packages.html",
+    "./refundpolicy.html",
+    "./privacypolicy.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
 
